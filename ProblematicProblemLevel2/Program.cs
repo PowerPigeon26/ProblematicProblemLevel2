@@ -65,14 +65,14 @@ namespace ProblematicProblemLevel2
             NewLine();
 
             PassMessage($"Addition: {x} + {y} = {calculator.Add(x, y)}");
-            PassMessage($"Subtraction: {x} + {y} = {calculator.Multiply(x, y)}");
-            PassMessage($"Multiplication: {x} + {y} = {calculator.Divide(x, y)}");
-            PassMessage($"Division: {x} + {y} = {calculator.Subtract(x, y)}");
+            PassMessage($"Subtraction: {x} - {y} = {calculator.Subtract(x, y)}");
+            PassMessage($"Multiplication: {x} * {y} = {calculator.Multiply(x, y)}");
+            PassMessage($"Division: {x} / {y} = {calculator.Divide(x, y)}");
             NewLine();
 
             PassMessage("Isn't math fun!", StatusCode.Success);            
             
-            SithLord.ExecuteOrder66();
+            //SithLord.ExecuteOrder66(); //NO, bad Sith Lord, bad!
             #endregion
         }
     }
