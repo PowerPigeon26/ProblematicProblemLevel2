@@ -54,11 +54,11 @@ namespace ProblematicProblemLevel2
             NewLine();
 
             PassMessage("Give me a number");
-            int x = GetUserNumber();
+            double x = GetUserNumber();
             NewLine();
 
             PassMessage("Give me another number");
-            int y = GetUserNumber();
+            double y = GetUserNumber();
             NewLine();
 
             PassMessage("I will now do the 4 standard math calculations on those 2 numbers");

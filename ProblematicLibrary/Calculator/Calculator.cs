@@ -15,17 +15,17 @@ namespace ProblematicLibrary.Calculator
 
         public double Divide(double x, double y)
         {
-            if (x == 0)
+            if (y == 0)
             {
-                throw new NotImplementedException("You choose what happens when dividing by zero");
+                return -1;
             }
 
-            return y / x;
+            return Math.Round(x / y, 2);
         }
 
         public double Multiply(double x, double y)
         {
-            return x * y;
+            return Math.Round(x * y, 2);
         }
 
         public double Subtract(double x, double y)

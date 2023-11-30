@@ -18,7 +18,7 @@ namespace ProblematicProblemLevel2.Tests
         [InlineData(-100,1,-99)]
         [InlineData(50,-50,0)]
         [InlineData(10000,-5000,5000)]
-        public void Should_AddTwoNumbers(double x, double y, int expected)
+        public void Should_AddTwoNumbers(double x, double y, double expected)
         {
             double actual = sut.Add(x, y);
 
@@ -33,7 +33,7 @@ namespace ProblematicProblemLevel2.Tests
         [InlineData(10000, -5000, 15000)]
         [InlineData(10000, 5000, 5000)]
         [InlineData(0, 0, 0)]
-        public void Should_SubtractTwoNumbers(double x, double y, int expected)
+        public void Should_SubtractTwoNumbers(double x, double y, double expected)
         {
             double actual = sut.Subtract(x, y);
 
@@ -46,12 +46,12 @@ namespace ProblematicProblemLevel2.Tests
         [InlineData(0, 0, 0)]
         [InlineData(-100, 1, -100)]
         [InlineData(50, -50, -2500)]
-        [InlineData(10, -5, -500)]
-        [InlineData(10, 5, 500)]
+        [InlineData(10, -5, -50)]
+        [InlineData(10, 5, 50)]
         [InlineData(5, 3, 15)]
         [InlineData(1.1, 3.5, 3.85)]
         [InlineData(5.5, 2, 11)]
-        public void Should_MultiplyTwoNumbers(double x, double y, int expected)
+        public void Should_MultiplyTwoNumbers(double x, double y, double expected)
         {
             double actual = sut.Multiply(x, y);
 
@@ -66,7 +66,7 @@ namespace ProblematicProblemLevel2.Tests
         [InlineData(-100, -2, 50)]
         [InlineData(10000, -5000, -2)]
         [InlineData(10000, 5000, 2)]
-        public void Should_DivideTwoNumbers(double x, double y, int expected)
+        public void Should_DivideTwoNumbers(double x, double y, double expected)
         {
             double actual = sut.Divide(x, y);
 

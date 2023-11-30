@@ -42,11 +42,11 @@ namespace ProblematicProblemLevel2.Interaction
             return dob;
         }
 
-        internal static int GetUserNumber()
+        internal static double GetUserNumber()
         {
-            int num;
+            double num;
 
-            while (!int.TryParse(GetUserInput(), out num))
+            while (!double.TryParse(GetUserInput(), out num))
             {
                 ConsoleLogging.PassMessage("That is not a valid number \nTry again...", StatusCode.Error);
             }

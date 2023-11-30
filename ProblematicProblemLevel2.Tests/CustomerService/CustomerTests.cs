@@ -41,7 +41,7 @@ namespace ProblematicProblemLevel2.Tests
         public void ShouldNot_ReturnNull()
         {
             //Random customer age and DOB
-            Customer actual = sut.CreateCustomer(FIRST_NAME, LAST_NAME, GetRandomAge(), GetRandomDob()); ;
+            Customer actual = sut.CreateCustomer(FIRST_NAME, LAST_NAME, GetRandomAge(), GetRandomDob());
 
             Assert.NotNull(actual);
         }
